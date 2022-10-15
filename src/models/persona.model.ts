@@ -41,6 +41,12 @@ export class Persona extends Entity {
   })
   clave: string;
 
+  @property({
+    type: 'string',
+    required: true,
+  })
+  direccion: string;
+
   @hasMany(() => Pedido)
   pedidos: Pedido[];
 
